@@ -1,0 +1,16 @@
+@tailwind base;
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@tailwind components;
+
+@layer components {
+  body {
+    @apply bg-blue-200;
+  }
+}
+
+@tailwind utilities;
