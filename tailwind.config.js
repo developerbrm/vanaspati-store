@@ -1,3 +1,16 @@
+const fallBackFonts = [
+  "sans-serif",
+  "-apple-system",
+  "BlinkMacSystemFont",
+  "Segoe UI",
+  "Roboto",
+  "Oxygen",
+  "Ubuntu",
+  "Cantarell",
+  "Fira Sans",
+  "Droid Sans",
+  "Helvetica Neue",
+]
 
 module.exports = {
   content: ["./pages/**/*.{html,js}", "./components/**/*.{html,js}"],
@@ -7,17 +20,17 @@ module.exports = {
         xs: "320px",
       },
       fontFamily: {
-        laila: ["Laila", "sans-serif"],
-        quicksand: ["Quicksand", "sans-serif"],
+        dosis: ["Dosis", ...fallBackFonts],
+        lato: ["Lato", ...fallBackFonts],
+        sacramento: ["Sacramento", ...fallBackFonts],
       },
       colors: {
-        "custom-white-extra-light": "#F9F9F9",
-        "custom-white-light": "#E5E5E5",
-        "custom-yellow": "#FCA311",
-        "custom-dark-blue": "#14213D",
-        "custom-dark-black": "#111111",
+        "custom-light-blue": "#EEEEEE",
+        "custom-dark-blue": "#00ADB5",
+        "custom-normal-black": "#393E46",
+        "custom-dark-black": "#222831",
       },
     },
   },
   plugins: [],
-};
+}
