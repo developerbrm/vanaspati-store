@@ -27,7 +27,7 @@ module.exports = {
       colors: {
         "custom-light-blue": "#EEEEEE",
         "custom-dark-blue": "#00ADB5",
-        "custom-normal-black": "#393E46",
+        "custom-medium-black": "#393E46",
         "custom-dark-black": "#222831",
       },
     },
