@@ -3,7 +3,7 @@ export const makeAPICall = async (url, headers) => {
 
   try {
     const headers = new Headers()
-    headers.append("X-Shopify-Access-Token", process.env.shopifyAccessToken)
+    headers.append("X-Shopify-Access-Token", process.env.SHOPIFY_ACCESS_TOKEN)
 
     const res = await fetch(url, {
       method: "GET",
