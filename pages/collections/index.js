@@ -20,15 +20,13 @@ const Collections = ({ allCollections = [] }) => {
         className="relative  mx-auto max-w-md overflow-hidden  rounded-xl shadow-md"
         key={id}
       >
-        <Link href={`/collections/${handle}`}>
+        <Link href={`/collections/${id}`}>
           <a className="block">
             <div className="block aspect-video h-full w-full">
               <Image
                 className=""
                 src={src}
                 alt={alt}
-                width={width}
-                height={height}
                 loading="lazy"
                 objectPosition={"center"}
                 objectFit="cover"
@@ -80,7 +78,7 @@ export async function getStaticProps() {
   }
 
   data = allPromises
-    .map((obj) => obj["smart_collections"] || obj["custom_collections"])
+    .map((obj) => obj?.["smart_collections"] || obj?.["custom_collections"])
     .flat()
 
   return {
